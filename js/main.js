@@ -145,3 +145,18 @@ jQuery(document).ready(function( $ ) {
 // custom code
 
 });
+
+var inter=document.getElementById('inter');
+var  nation=document.getElementById('nation');
+var international=document.getElementById('international');
+var national=document.getElementById('national');
+
+inter.addEventListener('click', ()=>{
+  international.style.display='block';
+  national.style.display='none';
+})
+
+nation.addEventListener('click', ()=>{
+  international.style.display='none';
+  national.style.display='block';
+})
